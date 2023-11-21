@@ -1,6 +1,13 @@
-<!-- app.component.html -->
-<div>
-  <h1>Mon Application</h1>
-  <app-catalogue></app-catalogue>
-  <app-panier></app-panier>
-</div>
+<header>
+  <h1>Shopify</h1>
+</header>
+
+<nav>
+  <ul>
+      <li><a routerLink="/catalog">Catalogue</a></li>
+      <li><a routerLink="/search">Recherche de Produits</a></li>
+      <li><a routerLink ="/panier">Panier</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

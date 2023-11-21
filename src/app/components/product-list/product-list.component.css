@@ -1,0 +1,30 @@
+table {
+width: 100%;
+border-collapse: collapse;
+font-family: Arial, sans-serif;
+}
+thead {
+background-color: #f0f0f0;
+}
+
+th {
+text-align: left;
+padding: 10px;
+}
+td {
+padding: 10px;
+border-bottom: 1px solid #ddd;
+}
+tr:nth-child(odd) {
+background-color: #f9f9f9;
+}
+td:nth-child(2) {
+font-weight: bold;
+color: #0072c6;
+cursor: pointer;
+}
+
+td:nth-child(2):hover {
+text-decoration: underline;
+}
+  

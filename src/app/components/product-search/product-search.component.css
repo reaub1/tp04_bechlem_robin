@@ -1,0 +1,77 @@
+.search-container {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.search-container h2 {
+    font-size: 1.5rem;
+    margin: 0 0 20px;
+    color: #333;
+}
+  
+.search-container form {
+display: flex;
+flex-direction: column;
+}
+
+.search-container label {
+font-size: 1rem;
+color: #333;
+}
+
+.search-container input[type="text"] {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin: 10px 0;
+}
+
+.search-container button {
+padding: 10px 20px;
+background-color: #f3f3f3;
+border: 1px solid #ddd;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+color: #333;
+}
+
+.results-container {
+background-color: #fff;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 5px;
+margin: 20px 0;
+}
+
+.results-container h3 {
+font-size: 1.5rem;
+margin: 0 0 20px;
+color: #333;
+}
+
+/* Style pour la table des résultats */
+.results-container table {
+width: 100%;
+border-collapse: collapse;
+font-family: Arial, sans-serif;
+}
+
+.results-container th {
+text-align: left;
+padding: 10px;
+background-color: #f0f0f0;
+}
+
+.results-container td {
+padding: 10px;
+border-bottom: 1px solid #ddd;
+}
+
+.results-container tr:nth-child(odd) {
+background-color: #f9f9f9;
+}

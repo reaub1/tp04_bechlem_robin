@@ -1,0 +1,31 @@
+<div class="search-container">
+    <h2>Rechercher des produits</h2>
+    <form (ngSubmit)="searchProducts()">
+        <label for="productName">Nom du produit:</label>
+        <input type="text" id="productName" [(ngModel)]="searchTerm" name="productName" placeholder="Entrez le nom du produit">
+        <button type="submit">Rechercher</button>
+    </form>
+</div>
+
+<div class="results-container">
+    <h3>Résultats de la recherche</h3>
+    <table *ngIf="filteredProducts.length > 0; else noResults">
+      <thead>
+        <tr>
+          <th>Nom du produit</th>
+          <th>Catégorie</th>
+          <th>Prix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of filteredProducts">
+          <td>{{ product.name }}</td>
+          <td>{{ product.category }}</td>
+          <td>${{ product.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #noResults>
+      Aucun résultat trouvé.
+    </ng-template>
+  </div>
