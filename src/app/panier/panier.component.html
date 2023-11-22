@@ -1,0 +1,11 @@
+<p>panier works!</p>
+
+<p>liste-produits works!</p>
+
+<div *ngFor="let p of liste$ | async">
+  {{ p.ref }}
+  {{ p.designation }}
+  {{ p.prix }}
+  {{ p.qte }}
+  <button (click)="delPanier(p)"> DELETE </button>
+</div>
