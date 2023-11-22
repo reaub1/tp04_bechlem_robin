@@ -23,8 +23,19 @@ export class ProduitsComponent implements OnInit {
   ngOnInit() {}
 
   addPanier(p:Produit) {
+    function showMessage() {
+
+      const messageContainer = document.getElementById("MessageAdd") as HTMLDivElement;
+      messageContainer.innerText = "ELEMENT AJOUTER AU PANIER";
+      setTimeout(() => {
+          messageContainer.innerText = "";
+      }, 3000);}
+    
 
     this.store.dispatch(new AddPanier(p));
+
+    showMessage();
+
   }  
 }
   

@@ -57,9 +57,17 @@ button:hover {
 
 div{
   font-family: 'San Francisco', 'Arial', sans-serif;
+  align-items: center;
 }
 img{
   width: 70px;
   height: 70px;
 }
 
+#MessageAdd{
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+  

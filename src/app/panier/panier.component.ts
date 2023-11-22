@@ -17,6 +17,15 @@ export class PanierComponent implements OnInit{
   ngOnInit() {}
 
   delPanier(p: Produit): void {
+    function showMessage() {
+
+      const messageContainer = document.getElementById("MessageDelete") as HTMLDivElement;
+      messageContainer.innerText = "ELEMENT SUPPRIMER DU PANIER";
+      setTimeout(() => {
+          messageContainer.innerText = "";
+      }, 3000);
+  }
     this.store.dispatch(new DelPanier(p));
+    showMessage();
   }
 }

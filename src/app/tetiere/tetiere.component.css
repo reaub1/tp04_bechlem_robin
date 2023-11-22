@@ -45,4 +45,8 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+a {
+  font-family: 'San Francisco', 'Arial', sans-serif;  
+}
+
 /* Ajoutez plus de styles en fonction de vos besoins spécifiques */

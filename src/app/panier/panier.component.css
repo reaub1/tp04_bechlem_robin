@@ -39,4 +39,6 @@ body {
 
   div{
     font-family: 'San Francisco', 'Arial', sans-serif;
+    align-items: center; /* Centrer les éléments */
+    color :#e60000;
   }

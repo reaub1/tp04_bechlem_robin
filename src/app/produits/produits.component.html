@@ -9,6 +9,9 @@
 <hr />
 <br />
 
+<div id="MessageAdd"></div>
+<div id="nbProduct"></div>
+
 <div id="container" *ngIf="produits$ | async as produits">
   <div id="catalogue" *ngFor="let p of produits | filter: recherche">
     <!-- <div>{{ p.ref }}</div> -->
