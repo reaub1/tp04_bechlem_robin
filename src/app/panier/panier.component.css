@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Une couleur chaude pour le fond */
+    color: #333; /* Couleur de texte principale */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  div {
+    background-color: #ffd699; /* Couleur de fond chaude */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 8px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #ff6666; /* Couleur de bouton chaude */
+    color: #fff; /* Couleur de texte pour le bouton */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e60000; /* Couleur de survol pour le bouton */
+  }
+  img{
+    width: 70px;
+    height: 70px;
+  }
+
+  div{
+    font-family: 'San Francisco', 'Arial', sans-serif;
+  }

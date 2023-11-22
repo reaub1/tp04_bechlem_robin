@@ -11,10 +11,11 @@
 
 <div id="container" *ngIf="produits$ | async as produits">
   <div id="catalogue" *ngFor="let p of produits | filter: recherche">
-    <div>{{ p.ref }}</div>
+    <!-- <div>{{ p.ref }}</div> -->
+    <img [src]=p.url />
     <div>{{ p.designation }}</div>
-    <div>{{ p.prix }}</div>
-    <div>{{ p.qte }}</div>
+    <div>{{ p.prix }} $</div>
+    <!-- <div>{{ p.qte }}</div> -->
     <button (click)="addPanier(p)"> ADD </button>
   </div>
 </div>
