@@ -1,13 +1,48 @@
-/* Ajoute ces styles à ton fichier CSS */
+/* Reset some default styles */
+body, h1, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
 h1 {
-  font-size: 28px; /* Taille de police */
-  color: #333; /* Couleur de texte */
-  text-align: center; /* Alignement du texte au centre */
-  margin: 10px 0; /* Marge autour de la balise <h1> */
-  padding: 10px; /* Ajoute du padding pour l'espace interne */
-  background-color: #f0f0f0; /* Couleur de fond */
-  border: 1px solid #ccc; /* Bordure légère */
-  border-radius: 8px; /* Coins arrondis */
-  font-family: 'San Francisco', 'Arial', sans-serif;
+  background-color: #ff5733; /* Couleur chaude (orange) */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
+
+nav {
+  background-color: #f7c95e; /* Couleur chaude (jaune) */
+  padding: 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff5733; /* Changement de couleur au survol (orange) */
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajoutez plus de styles en fonction de vos besoins spécifiques */
